@@ -47,3 +47,15 @@ if "premium" show all content
 if"standard"  show some content
 if they don't have subcription tell pleaase subscribe
 */
+
+let subcription =true;
+let subcriptionType = "standard";
+if(subcription === true){ 
+ if(subcriptionType === "premium"){
+    console.log("You will get all content")
+ }else if(subcriptionType ==="standard"){
+    console.log("you will get limited content")
+ }
+}else{
+    console.log("You have to get subscription to access content")
+}
