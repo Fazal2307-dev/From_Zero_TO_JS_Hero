@@ -54,18 +54,18 @@
 
 // 5. Simple Password Checker (Fixed Attempts)
 
-let dbPassword = "fazal";
-let userPassword = null;
-let attemp =0;
-while(dbPassword !== userPassword && attemp<3){
-    userPassword = prompt("Enter your password")
-    attemp++;
-    if(dbPassword === userPassword){
-        alert("congrats your password is correct ")
-    }else{
-        alert("your password is incorrect")
-    }
-}
+// let dbPassword = "fazal";
+// let userPassword = null;
+// let attemp =0;
+// while(dbPassword !== userPassword && attemp<3){
+//     userPassword = prompt("Enter your password")
+//     attemp++;
+//     if(dbPassword === userPassword){
+//         alert("congrats your password is correct ")
+//     }else{
+//         alert("your password is incorrect")
+//     }
+// }
 
 
 
@@ -98,14 +98,15 @@ while(dbPassword !== userPassword && attemp<3){
 // console.log(fact);
 
 // 7.  Print the following pattern. (build it for nth numbers)
-// let n1=5;
-// for(let i =1;i<=n1;i++){
-//     for(let j=1;j<=i;j++ ){
-//         console.log(j)
-//     }
+let n1=5;
+for(let i =1;i<=n1;i++){
+    let str = "";
+    for(let j=1;j<=i;j++ ){
+        str = str + j +" ";
+    }
+    console.log(str)
 
-    
-// }
+}
 
 
 // let str = "MD FAZAL"
@@ -126,3 +127,36 @@ for(let ch of str){
 }
 console.log("VowelCount are =",vowelCount)
 console.log("ConsonentCount are=",consonentCount)
+
+//7
+let playAgain = 'yes';
+
+while (playAgain === 'yes') {
+    alert("You wake up in the dark forest!");
+
+    let userChoice = prompt("Do you want to go left or right? ");
+
+    if (userChoice === 'left') {
+        alert("You see something shiny in the mud!");
+        userChoice = prompt("Do you pick it up? (yes or no) ");
+        if (userChoice === 'yes') {
+            alert("It is a magical stone! you are teleported to safety, you win!");
+        } else {
+            alert("mar gya tu!")
+        }
+    } else {
+        alert("you find a cave!");
+        userChoice = prompt("Do you  Want to enter the cave? (yes or no) ")
+        if (userChoice === 'yes') {
+            alert("you barely escape!")
+        } else {
+            alert("acha raat beetega apka!");
+        }
+    }
+
+    userChoice = prompt("Do you want to play again? (yes or no)")
+    if(userChoice === 'no'){
+        playAgain = 'no';
+        alert("Thanks for playing!")
+    }
+}
