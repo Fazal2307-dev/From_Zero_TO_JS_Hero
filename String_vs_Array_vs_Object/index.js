@@ -1,0 +1,2 @@
+//String
+console.log('fazal')
