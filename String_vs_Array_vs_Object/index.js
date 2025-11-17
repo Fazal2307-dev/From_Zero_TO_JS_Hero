@@ -33,11 +33,41 @@
 // console.log(str3,str3.length)
 //string are immutable;
 
-let str = "Fazal";
-for(let ch of str){
-    console.log(ch);
-}
+// let str = "Fazal";
+// for(let ch of str){
+//     console.log(ch);
+// }
+// let str2 ="";
+// for(let ch of str){
+//     str2 = str2 + ch +" ";
+// }
 
+// console.log(str2)
+//string Properties & Method in js
+//properties-don't use () 
+//Method -() use thiss 
+
+//.toUpperCase,.toLowerCase
+// let str = "Fazal"
+// let upperCaseStr  = str.toUpperCase();
+// let lowerCaseStr = str.toLowerCase()
+// console.log(str,upperCaseStr,lowerCaseStr)
+
+// let firstName = "MD"
+// let lastName = "Fazal"
+// let fullName = firstName.concat(" ",lastName)
+// console.log(fullName)
+
+//includes
+
+let str = "hello how are you,you"
+// console.log(str.indexOf("a"))
+// console.log(str.charAt(3))
+// let check = str.includes("ou")
+// console.log(check)
+
+console.log(str.replace("you","and")) // it will only change one if two value are same
+console.log(str.replaceAll("you","me"))// it will replace all how are same
 
 
 
