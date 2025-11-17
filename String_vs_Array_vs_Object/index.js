@@ -21,6 +21,24 @@
 // ${a} are called string interpolation
 
 
-let str = new String("Manas");
-console.log(str)
+// let str = new String("Manas");//string constructor
+// console.log(str)
+
+// let str = "Hello \n how are you"
+// console.log(str,str.length)
+// let str2 = "Fazal\nmd"
+// console.log(str2,str2.length)
+
+// let str3= "Fazal\"md"
+// console.log(str3,str3.length)
+//string are immutable;
+
+let str = "Fazal";
+for(let ch of str){
+    console.log(ch);
+}
+
+
+
+
 
