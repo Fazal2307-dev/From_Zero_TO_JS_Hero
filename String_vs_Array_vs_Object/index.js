@@ -1,5 +1,11 @@
-//String
+//--------------------------------String------------------------------
 // console.log('fazal')
+
+// const { prompt } = require("readline-sync");
+
+// const { prompt } = require("readline-sync");
+
+// const { prompt } = require("readline-sync");
 
 // let str = "manas"
 // let str2 = 'Manas'
@@ -60,15 +66,61 @@
 
 //includes
 
-let str = "hello how are you,you"
+// let str = "hello how are you,you"
 // console.log(str.indexOf("a"))
 // console.log(str.charAt(3))
 // let check = str.includes("ou")
 // console.log(check)
 
-console.log(str.replace("you","and")) // it will only change one if two value are same
-console.log(str.replaceAll("you","me"))// it will replace all how are same
+// console.log(str.replace("you","and")) // it will only change one if two value are same
+// console.log(str.replaceAll("you","me"))// it will replace all how are same
 
 
+// let username = "@mdfazal"
+// console.log(username.slice(1,5))
 
+// let str = "alpha beta gamma"
+// console.log(str.split("a"))
 
+//1. Create a program to take full name from user and generate a username start
+// with @, followed by their full name and ends with underscore followed by the
+// length of full name
+
+// let fullName = prompt("Enter your FullName:")
+// let username = `@${fullName.trim().replaceAll(" ","")}_${fullName.length}`
+// console.log(username)
+
+// 2. Take a string and a character from the user and:
+// a) count how many times that character appears in the string.
+// b) Case-Insensitive Version
+// c) Find All Occurrence Positions
+
+// let user = prompt("Enter a String:")
+// let char = prompt("Enter a char:")
+
+// let count =0;
+// for (let index in user){
+//     if(user[index].toLowerCase() === char.toLowerCase()){
+//         console.log("Occurrence position = ",index)
+//         count++;
+//     }
+
+// }
+// console.log("count =",count)//
+
+//3. Count the words present in a given string.
+// let user = propmt("Enter a word")
+// for (let ch of user){
+
+// }
+// let str = "heednf hjsqbdj hebr  "
+// console.log(str.split(" ").length)
+// let user = prompt("Enter word:")
+// let count =0;
+// for (let i =0;i<user.length;i++){
+//     console.log(user[i]);
+//     count++;
+// }
+// console.log(count);
+
+//-------------------------ARRAY----------------------------------//
