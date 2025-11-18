@@ -128,12 +128,53 @@
 // console.log(num)//[4,9,10,12,32]
 
 //map()
-let arr = [12,23,43,56,65]
-let newarr = arr.map((elem,index)=>{
-    return (elem*2)
+// let arr = [12,23,43,56,65]
+// let newarr = arr.map((elem,index)=>{
+//     return (elem*2)
+// })
+// console.log(newarr)
+
+//forEach()
+// let arr = [12,23,43,56,65]
+// arr.forEach((elem,index)=>{
+//     arr[index]= elem*2;
+// })
+// console.log(arr)
+
+//filter()
+// let arr = [12,23,43,56,65]
+// let newarr = arr.filter((elem,index)=>{
+//    return elem%2===0
+// })
+// console.log(arr)
+// console.log(newarr)
+
+//reduce
+// let arr = [12,23,43,56,65]
+// let result = arr.reduce((preVal,curreVal)=>{
+//     return preVal + curreVal;
+// })
+// console.log(arr)
+// console.log(result)
+
+//1. For an array with marks of students find the average marks of the entire class.
+// let student = [65,76,87,89,90,93,32]
+// let sum = student.reduce((preVal,currVal)=>{
+//     return preVal + currVal;
+// })
+// let average = sum / 2;
+// console.log(average)
+
+
+//2. Create an array with the given length(n) and fill with 0.
+
+// let arr = new Array(20).fill(0)
+// console.log(arr)
+
+
+//3. Create an array with the given length (n) and store natural numbers from 1 to n.
+let arr = new Array(20).fill(0)
+arr.forEach((item,index)=>{
+    arr[index] = index+1;
 })
-console.log(newarr)
-
-
-
-
+console.log(arr)
