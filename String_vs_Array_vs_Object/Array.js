@@ -127,6 +127,13 @@
 // })
 // console.log(num)//[4,9,10,12,32]
 
+//map()
+let arr = [12,23,43,56,65]
+let newarr = arr.map((elem,index)=>{
+    return (elem*2)
+})
+console.log(newarr)
+
 
 
 
