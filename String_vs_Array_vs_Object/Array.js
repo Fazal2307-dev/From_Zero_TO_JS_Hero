@@ -104,7 +104,29 @@
 // console.log(test)
 
 //flat()
-let avenger = ["ironman","thor",["thor1","thor2",["shehulk","ironfiest"]]]
-console.log(avenger)
-let marvel = avenger.flat(Infinity)
-console.log(marvel)
+// let avenger = ["ironman","thor",["thor1","thor2",["shehulk","ironfiest"]]]
+// console.log(avenger)
+// let marvel = avenger.flat(Infinity)
+// console.log(marvel)
+
+//sort()
+// let heroes =['wanda','ironman','spiderman','captainamerica','hulk','hawkey']
+// console.log(heroes)
+// heroes.sort()
+// console.log(heroes)
+//in string sorting work properly
+
+// let num = [12,32,10,9,4]
+// // num.sort()
+// // console.log(num)//[10,12,32,4,9] but it is not correct 
+// //why we get this answer because it will check through 1 and then 0 check
+// //then goto 9
+// // for getting correct answer you should do this
+// num.sort((a,b)=>{
+//     return  a-b;
+// })
+// console.log(num)//[4,9,10,12,32]
+
+
+
+
