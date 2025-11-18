@@ -173,8 +173,65 @@
 
 
 //3. Create an array with the given length (n) and store natural numbers from 1 to n.
-let arr = new Array(20).fill(0)
-arr.forEach((item,index)=>{
-    arr[index] = index+1;
+// let arr = new Array(20).fill(0)
+// arr.forEach((item,index)=>{
+//     arr[index] = index+1;
+// })
+// console.log(arr)
+
+//4. Consider an array of mcu heroes ([ironman, captain, black widow,
+//  wanda, hulk, black panther]).
+//Now:
+// a) Add spiderman at the end and thor at the start.
+// b) Remove black widow and add hawkeye in its place.
+// c) Check whether captain is present in the array.
+
+// let mcu = ["ironman","captaain","black widow","wanda","hulk","black panther"]
+// console.log(mcu)
+// //a.
+// mcu.push("spiderman")
+// console.log(mcu)
+// mcu.unshift("thor")
+// console.log(mcu)
+// //b.
+// mcu.splice(3,1,"hawkay")
+// console.log(mcu)
+// //c.
+// console.log(mcu.includes("captaain"))
+
+//5. How to check if given thing is array or not? How to convert other datatypes to array? What if we try
+//to convert an object into an array?
+
+// Arra.of()
+/*6. We have three variables a, b, c, a contains any number, b contains any string, c contains any object,
+and d contains any array. Can we create an array from all these four variables? If yes, How?*/
+
+// let a = 12
+// let b = "string"
+// let c ={
+//     name:"manas"
+// }
+// let d =[12,25,78];
+
+// console.log(Array.of(a,b,c,d)) 
+
+
+//7. Check whether given string is palindrome or not.
+
+// let str = "ollo"
+// let revstr = str.split("").reverse().join("");
+// if(str === revstr){
+//     console.log("plaindrom string")
+// }else{
+//     console.log("Not plaindrom")
+// }
+//
+
+
+//8. Capitalize the first letter of every word in a sentence.
+let str = "hello are you " 
+let newarr = str.split(" ").map((elem)=>{
+    return elem.charAt(0).toUpperCase()+elem.slice(1)
 })
-console.log(arr)
+
+console.log(newarr.join(" "))
