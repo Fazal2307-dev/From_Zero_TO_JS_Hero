@@ -4,3 +4,4 @@ let user = {
     email:"mdfazalbarh@gmail.com",
     Address:"Barh,Patna"
 }
+console.log(user.name)
