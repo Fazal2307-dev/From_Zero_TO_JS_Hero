@@ -5,3 +5,4 @@ let user = {
     Address:"Barh,Patna"
 }
 console.log(user.name)
+console.log(user)
