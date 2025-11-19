@@ -26,3 +26,35 @@
 // })
 // obj.age = 23;
 // console.log(obj)
+
+//  let obj = {
+//     name:"Fazal",
+//     email:"mdfazalbarh@gmail.com"
+//  }
+//  obj.address = "Barh"
+//  console.log(obj)
+// delete obj.address;
+// console.log(obj)
+
+//this keyword
+// let obj={
+//     name:"alpha",
+//     greet:function (){
+//         return `hello i am ${this.name}`
+//     }
+// }
+// console.log(obj.greet())
+
+let obj ={
+    name:"alpha",
+    age:23,
+}
+
+let keys = Object.keys(obj)
+console.log(keys)
+let value = Object.values(obj)
+console.log(value)
+
+for(test in obj){
+    console.log(test)
+}
