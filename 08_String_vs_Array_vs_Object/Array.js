@@ -229,9 +229,9 @@ and d contains any array. Can we create an array from all these four variables? 
 
 
 //8. Capitalize the first letter of every word in a sentence.
-let str = "hello are you " 
-let newarr = str.split(" ").map((elem)=>{
-    return elem.charAt(0).toUpperCase()+elem.slice(1)
-})
+// let str = "hello are you " 
+// let newarr = str.split(" ").map((elem)=>{
+//     return elem.charAt(0).toUpperCase()+elem.slice(1)
+// })
 
-console.log(newarr.join(" "))
+// console.log(newarr.join(" "))
