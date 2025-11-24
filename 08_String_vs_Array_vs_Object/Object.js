@@ -171,23 +171,37 @@ includes the given keyword (case-insensitive).
 /*6 Write a function groupByPost(comments) that returns an object grouping comments by postId
 */
 
-const comments = [
-    {postId:1,text:"Greet Post!"},
-    {postId:2,text:"Thanks!"},
-    {postId:1,text:"Very helpful"},
-]
+// const comments = [
+//     {postId:1,text:"Greet Post!"},
+//     {postId:2,text:"Thanks!"},
+//     {postId:1,text:"Very helpful"},
+// ]
 
 
-let groupByPost=(elem)=>{
-let groupComments ={}
-elem.forEach(value=>{
-    if(groupComments.hasOwnProperty(value.postId)){
-        groupComments[value.postId].push(value.text)
-    }else{
-        groupComments[value.postId]=[value.text]
-    }
-} );
-console.log(groupComments)
+// let groupByPost=(elem)=>{
+// let groupComments ={}
+// elem.forEach(value=>{
+//     if(groupComments.hasOwnProperty(value.postId)){
+//         groupComments[value.postId].push(value.text)
+//     }else{
+//         groupComments[value.postId]=[value.text]
+//     }
+// } );
+// console.log(groupComments)
+// }
+
+// groupByPost(comments)
+
+/*7 Write a function buildQuery(params) that returns
+*/
+
+const params={
+    search:"alpha",
+    page:2,
+    sort:"asc"
 }
 
-groupByPost(comments)
+let createUrl = (params)=>{
+return `search=${params.search}&page=${params.page}&sort=${params.sort}`;
+}
+console.log(createUrl(params))
