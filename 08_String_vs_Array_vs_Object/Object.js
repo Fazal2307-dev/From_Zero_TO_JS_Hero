@@ -117,3 +117,16 @@ the full name.*/
 // return `${elem.firstName} ${elem.middleName} ${elem.lastName}`
 // }
 // console.log(convertToFullName(user))
+
+/*q3. Write a function that takes object and returns the number of properties in
+ an object.
+*/
+// let obj ={
+//     name:"Fazal",
+//     age:23,
+//     address:"Barh"
+// }
+// let numberOfProperties = (elem)=>{
+// return Object.keys(elem).length
+// }
+//  console.log(numberOfProperties(obj))
