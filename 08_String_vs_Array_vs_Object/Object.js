@@ -45,10 +45,10 @@
 // }
 // console.log(obj.greet())
 
-let obj ={
-    name:"alpha",
-    age:23,
-}
+// let obj ={
+//     name:"alpha",
+//     age:23,
+// }
 
 // let keys = Object.keys(obj)
 // console.log(keys)
@@ -60,5 +60,27 @@ let obj ={
 // }
 
 // 
-let object = object.entries(obj)
-console.log(object)
+// let object1 = Object.entries(obj)
+// console.log(object1)
+
+// let obj ={
+//     name:"alpha",
+//     age:23,
+// }
+//freez()
+// Object.freeze(obj)
+// obj.name = "Fazal";
+
+
+//{}-Literals
+
+//Destructring
+
+// const user={
+// name:'Fazal',
+// age:23,
+// address:"Barh,Patna"
+// }
+
+// let  {name,age,address}=user;
+// console.log(name,age,address)
