@@ -153,16 +153,41 @@ the full name.*/
 /*5. Write a function searchProducts(products, keyword) that returns an array of products whose name
 includes the given keyword (case-insensitive).
 */
-const products =[
-    {id:1,name:"iphone 14"},
-    {id:2,name:"motorola g34"},
-    {id:3,name:"realme"},
+// const products =[
+//     {id:1,name:"iphone 14"},
+//     {id:2,name:"motorola g34"},
+//     {id:3,name:"realme"},
+// ]
+
+// let searchProducts =(elem,searchKeyword)=>{
+// let filteredArray = elem.filter(obj=>{
+//     return obj.name.toLowerCase().includes(searchKeyword.toLowerCase())
+// })
+// console.log(filteredArray)
+// }
+// searchProducts(products,"r")
+
+
+/*6 Write a function groupByPost(comments) that returns an object grouping comments by postId
+*/
+
+const comments = [
+    {postId:1,text:"Greet Post!"},
+    {postId:2,text:"Thanks!"},
+    {postId:1,text:"Very helpful"},
 ]
 
-let searchProducts =(elem,searchKeyword)=>{
-let filteredArray = elem.filter(obj=>{
-    return obj.name.toLowerCase().includes(searchKeyword.toLowerCase())
-})
-console.log(filteredArray)
+
+let groupByPost=(elem)=>{
+let groupComments ={}
+elem.forEach(value=>{
+    if(groupComments.hasOwnProperty(value.postId)){
+        groupComments[value.postId].push(value.text)
+    }else{
+        groupComments[value.postId]=[value.text]
+    }
+} );
+console.log(groupComments)
 }
-searchProducts(products,"r")
+
+groupByPost(comments)
