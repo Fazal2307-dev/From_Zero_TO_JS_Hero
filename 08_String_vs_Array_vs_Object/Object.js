@@ -50,11 +50,15 @@ let obj ={
     age:23,
 }
 
-let keys = Object.keys(obj)
-console.log(keys)
-let value = Object.values(obj)
-console.log(value)
+// let keys = Object.keys(obj)
+// console.log(keys)
+// let value = Object.values(obj)
+// console.log(value)
 
-for(test in obj){
-    console.log(test)
-}
+// for(test in obj){
+//     console.log(obj[test])
+// }
+
+// 
+let object = object.entries(obj)
+console.log(object)
