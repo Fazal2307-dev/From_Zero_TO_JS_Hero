@@ -132,14 +132,37 @@ the full name.*/
 //  console.log(numberOfProperties(obj))
 
 /*q4. Write a function that returns an array of names of users who have the role “admin";*/
-const user=[
-    {name:"Alice",role:"admin"},
-    {name:"Bob",role:"user"},
-    {name:"charlie",role:"admin"}
+// const user=[
+//     {name:"Alice",role:"admin"},
+//     {name:"Bob",role:"user"},
+//     {name:"charlie",role:"admin"}
+// ]
+
+// let nameOfAdmin =(user)=>{
+// let filterItem =  user.filter((elem)=>{
+//   return elem.role === 'admin'
+// })
+
+// let resultArray = filterItem.map((elem)=>{
+//     return elem.name
+// })
+// return resultArray;
+// }
+//  console.log(nameOfAdmin(user))
+
+/*5. Write a function searchProducts(products, keyword) that returns an array of products whose name
+includes the given keyword (case-insensitive).
+*/
+const products =[
+    {id:1,name:"iphone 14"},
+    {id:2,name:"motorola g34"},
+    {id:3,name:"realme"},
 ]
 
-let nameOfAdmin = user.filter((elem)=>{
-  return elem.role === 'admin'
+let searchProducts =(elem,searchKeyword)=>{
+let filteredArray = elem.filter(obj=>{
+    return obj.name.toLowerCase().includes(searchKeyword.toLowerCase())
 })
-
-console.log(nameOfAdmin)
+console.log(filteredArray)
+}
+searchProducts(products,"r")
