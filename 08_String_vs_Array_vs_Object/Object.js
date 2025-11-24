@@ -130,3 +130,16 @@ the full name.*/
 // return Object.keys(elem).length
 // }
 //  console.log(numberOfProperties(obj))
+
+/*q4. Write a function that returns an array of names of users who have the role “admin";*/
+const user=[
+    {name:"Alice",role:"admin"},
+    {name:"Bob",role:"user"},
+    {name:"charlie",role:"admin"}
+]
+
+let nameOfAdmin = user.filter((elem)=>{
+  return elem.role === 'admin'
+})
+
+console.log(nameOfAdmin)
